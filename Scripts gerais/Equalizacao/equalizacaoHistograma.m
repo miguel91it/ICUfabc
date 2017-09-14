@@ -38,11 +38,10 @@ for L = 1:size(gs2_2d_equali, 1)
         intensidadeMapeada = s(1, intensidadeOriginal + 1);
         
         gs2_2d_equali(L, C) = intensidadeMapeada;
-        
     end
 end
 
-
-imshow(gs2_2d), figure, imshow(gs2_2d_equali)
+histogram(n)
+%imshow(gs2_2d), figure, imshow(gs2_2d_equali)
 %figure, stem(p)
 %figure, imshow(gs2), figure, plot(p(1,:))
