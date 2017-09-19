@@ -4,11 +4,11 @@
 %multiplicacao
 %divisao
 
-n = 0:1:100;
+n = 0:0.01:2*pi;
 
 x1 = sin(n);
 
-x2 = 0*n + 1;
+x2 = cos(n);
 
 sum = x1+x2;
 
