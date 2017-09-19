@@ -1,0 +1,37 @@
+%operacoes basicas com sinais
+%soma
+%subtracao
+%multiplicacao
+%divisao
+
+n = 0:1:100;
+
+x1 = 2*n;
+
+x2 = 1*n;
+
+sum = x1+x2;
+
+diff = x1 - x2;
+
+mult = x1 .* x2;
+
+div = x1 ./ x2;
+
+p = plot(n, x1, n, x2, n, sum);%, hold on, plot(n, x2), hold on, plot(n, sum)
+title('sum x1[n] + x2[n]')
+xlabel('n')
+ylabel('x[n]')
+p(1).Color = 'red';
+p(2).Color = 'blue';
+p(3).Color = 'yellow';
+p()
+
+% figure,
+% plot(n, x1), hold on, plot(n, x2), hold on, plot(n, diff)
+% 
+% figure,
+% plot(n, x1), hold on, plot(n, x2), hold on, plot(n, mult)
+% 
+% figure,
+% plot(n, x1), hold on, plot(n, x2), hold on, plot(n, div)
